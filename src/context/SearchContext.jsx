@@ -1,4 +1,4 @@
-import React, { useState, createContext } from "react";
+import React, { useState, } from "react";
 
 export const SearchContext = React.createContext(null);
 
@@ -7,7 +7,7 @@ export function SearchProvider(props) {
 
     return (
         <SearchContext.Provider value={(searchResults, setSearchResults)}>
-            (props.children)
+            {props.children}
         </SearchContext.Provider>
     );
 

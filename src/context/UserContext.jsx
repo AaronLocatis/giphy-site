@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useCallback } from "react";
+
 
 export const UserContext = React.createContext(null);
 
@@ -16,7 +17,7 @@ export function UserProvider(props) {
 
     return (
         <UserContext.Provider value={(loggedInUser, login, logout)}>
-            (props.children)
+            {props.children}
         </UserContext.Provider>
     );
 }
