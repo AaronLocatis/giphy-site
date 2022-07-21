@@ -1,15 +1,60 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { UserContext } from "../context/UserContext";
 
-function Menu() {
+const Menu = () => {
+    const { loggedInUser } = useContext(UserContext);
     return (
-        <nav>
-            <NavLink to="/search">Search</NavLink>
-            <NavLink to="/favorites">Favorites</NavLink>
-            <NavLink to="/login">Login</NavLink>
-            <NavLink to="/register">Register</NavLink>
-
-        </nav>
+        <header className="navbar navbar-expand-lg">
+            <div className="container-fluid">
+                {loggedInUser && (
+                    <div>
+                        <img src="https://media1.giphy.com/media/2YpTTV69fQsH5BqxSm/giphy.gif" />
+                        <h3> Hello {loggedInUser}</h3>
+                    </div>
+                )}
+                <div>
+                    <NavLink
+                        to="/search"
+                        className={({ isActive }) =>
+                            isActive ? "activeLink links" : "links"
+                        }
+                    >
+                        <h3>Search Gifs</h3>
+                    </NavLink>
+                </div>
+                <div>
+                    <NavLink
+                        to="/login"
+                        className={({ isActive }) =>
+                            isActive ? "activeLink links" : "links"
+                        }
+                    >
+                        <h3>Login</h3>
+                    </NavLink>
+                </div>
+                <div>
+                    <NavLink
+                        to="/register"
+                        className={({ isActive }) =>
+                            isActive ? "activeLink links" : "links"
+                        }
+                    >
+                        <h3>Register</h3>
+                    </NavLink>
+                </div>
+                <div>
+                    <NavLink
+                        to="/favorites"
+                        className={({ isActive }) =>
+                            isActive ? "activeLink links" : "links"
+                        }
+                    >
+                        <h3>Favorites</h3>
+                    </NavLink>
+                </div>
+            </div>
+        </header>
     );
-}
+};
 export default Menu;

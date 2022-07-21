@@ -1,0 +1,44 @@
+.flex {
+    display: flex;
+}
+
+.just {
+    margin: 2px;
+    justify-content: space-between;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+body {
+    background-image: linear-gradient(to left, #2F0537, #333A74, #096EAA, #00A4D3, #12DBEB);
+}
+
+header img {
+    height: 120px;
+}
+
+.links {
+    color: white;
+    text-decoration: none;
+}
+
+.heart {
+    position: absolute;
+    top: 0px;
+    right: 0px
+}
+
+.gif {
+    position: relative;
+}
+
+.red {
+    background: red;
+}
+
+div {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}

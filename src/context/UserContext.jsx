@@ -16,7 +16,7 @@ export function UserProvider(props) {
     }, [setLoggedInUser]);
 
     return (
-        <UserContext.Provider value={(loggedInUser, login, logout)}>
+        <UserContext.Provider value={{ loggedInUser, login, logout }}>
             {props.children}
         </UserContext.Provider>
     );

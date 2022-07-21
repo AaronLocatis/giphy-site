@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { UserProvider } from "./context/UserContext";
-import { FavoritesProvider } from "./context/FavoritesContext";
+import { FavoritesProvider } from "./context/FavContext";
 import { SearchProvider } from "./context/SearchContext";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
