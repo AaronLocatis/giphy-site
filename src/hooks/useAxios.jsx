@@ -21,6 +21,9 @@ export default function useAxios(url) {
                     response.data.data.map((val) => ({
                         gifUrl: val.images.fixed_height.url,
                         id: val.id,
+                        // gif_id: val.id,
+                        // title: val.title,
+                        // url: val.images.original.url,
                     }))
                 );
             } catch (e) {

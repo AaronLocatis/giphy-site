@@ -13,6 +13,8 @@
 
 body {
     background-image: linear-gradient(to left, #2F0537, #333A74, #096EAA, #00A4D3, #12DBEB);
+    font-family: "Oswald", sans-serif;
+    color: white;
 }
 
 header img {
@@ -41,4 +43,37 @@ header img {
 div {
     margin-top: 2px;
     margin-bottom: 2px;
+}
+
+header img {
+    height: 80px;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    background-color: rgba(217, 212, 212, 0.5);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.links {
+    color: white;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    color: white;
+}
+
+.active {
+    color: black
 }

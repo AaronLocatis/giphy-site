@@ -16,9 +16,7 @@ const Menu = () => {
                 <div>
                     <NavLink
                         to="/search"
-                        className={({ isActive }) =>
-                            isActive ? "activeLink links" : "links"
-                        }
+                        className="links"
                     >
                         <h3>Search Gifs</h3>
                     </NavLink>
@@ -26,9 +24,7 @@ const Menu = () => {
                 <div>
                     <NavLink
                         to="/login"
-                        className={({ isActive }) =>
-                            isActive ? "activeLink links" : "links"
-                        }
+                        className="links"
                     >
                         <h3>Login</h3>
                     </NavLink>
@@ -36,9 +32,7 @@ const Menu = () => {
                 <div>
                     <NavLink
                         to="/register"
-                        className={({ isActive }) =>
-                            isActive ? "activeLink links" : "links"
-                        }
+                        className="links"
                     >
                         <h3>Register</h3>
                     </NavLink>
@@ -46,9 +40,8 @@ const Menu = () => {
                 <div>
                     <NavLink
                         to="/favorites"
-                        className={({ isActive }) =>
-                            isActive ? "activeLink links" : "links"
-                        }
+                        className="links"
+
                     >
                         <h3>Favorites</h3>
                     </NavLink>
